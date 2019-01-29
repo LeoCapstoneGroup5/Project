@@ -2,7 +2,6 @@ const https = require('https');
 const DEBUG_MODE = true;
 
 if (DEBUG_MODE)
-<<<<<<< HEAD
   localDebug();
 else {
   getWebpage();
@@ -60,7 +59,6 @@ function cleanData(data) {
 
   return cleanedData;
 };
-=======
 	localDebug();
 else {
 	getWebpage();
@@ -117,4 +115,3 @@ function cleanData(data) {
 
 	return cleanedData;
 	}
->>>>>>> master
