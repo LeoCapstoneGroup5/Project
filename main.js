@@ -17,7 +17,7 @@ function localDebug() {
   } catch(e) {
       console.log('Error:', e.stack);
   }
-}
+};
 
 function getWebpage() {
   //if debug mode is off this will retrieve whatever is in the url constant
@@ -38,7 +38,7 @@ function getWebpage() {
   }).on("error", (e) => {
     console.log("Error: " + e.message);
   });
-}
+};
 
 
 function cleanData(data) {
