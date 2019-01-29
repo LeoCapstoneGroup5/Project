@@ -12,10 +12,10 @@ function localDebug() {
   var fs = require('fs');
 
   try {
-      var data = fs.readFileSync('wiki.html', 'utf8');
-      data = cleanData(data);
+    var data = fs.readFileSync('wiki.html', 'utf8');
+    data = cleanData(data);
   } catch(e) {
-      console.error('Error:', e.stack);
+    console.error('Error:', e.stack);
   }
 }
 
@@ -35,7 +35,7 @@ function getWebpage() {
       console.log(data);
     });
   }).on("error", (e) => {
-    console.log("Error: " + e.message);
+    console.error("Error: " + e.message);
   });
 }
 
